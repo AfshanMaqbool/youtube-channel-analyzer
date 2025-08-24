@@ -64,8 +64,6 @@ To collect data from the YouTube Data API, I need to install the google-api-pyth
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-# %pip install google-api-python-client
-
 """**Reasoning**:
 To interact with the YouTube Data API, I need to import the necessary libraries and build the service object. This requires importing `build` from `googleapiclient.discovery` and potentially handling API keys or authentication, although for this task, I will assume a public channel and focus on data accessible without specific channel ownership credentials where possible, or acknowledge limitations if not. I'll also import pandas to store the data. Since I don't have the actual API key or channel ID, I will write placeholder code and explain what would be needed.
 
@@ -2288,9 +2286,7 @@ Discuss how a UI element could be integrated to allow a user to input the channe
 Add a markdown cell to discuss the UI placeholder for the channel link input.
 """
 
-# Commented out IPython magic to ensure Python compatibility.
-# %%markdown
-# 
+# Commented out IPython magic to ensure Python compatibility.# 
 # ## UI Placeholder Discussion
 # 
 # This notebook environment utilizes a simple text input field (`youtube_channel_link = '' #@param {type:"string"}`) in a code cell to allow the user to paste a YouTube channel link. This serves as a conceptual placeholder for how user input would be handled in a deployed application with a graphical user interface (UI).
@@ -2306,7 +2302,6 @@ The previous command failed because I tried to write a markdown cell using a cod
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-# %%markdown
 # 
 # ## UI Placeholder Discussion
 # 
@@ -2326,7 +2321,6 @@ Create a markdown cell to outline the steps for preparing the notebook for shari
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-# %%markdown
 # ## Preparing for GitHub Sharing
 # 
 # To share this notebook and related project files on GitHub, follow these steps to ensure all necessary components are included and sensitive information is protected:
@@ -2539,8 +2533,6 @@ Your notebook and associated files are now on your GitHub repository!
 1.  **Initialize a Git Repository:** Open your terminal or command prompt, navigate to the directory where your notebook and files are saved, and run:
 """
 
-!git add your_notebook_name.ipynb requirements.txt README.md
-
 """# YouTube Channel Analyzer and Strategy Generator
 
 ## Project Overview
@@ -2614,17 +2606,8 @@ If you'd like to contribute to this project, feel free to fork the repository an
 ---
 """
 
-!git commit -m "Add initial project files"
-
-!git remote add origin <remote_repository_url>
-
-!git push -u origin main
-
 from google.colab import drive
 drive.mount('/content/drive')
-
-!pip freeze > requirements.txt
-
 
 
 """## Enhance Data Collection
